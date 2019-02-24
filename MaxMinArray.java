@@ -20,6 +20,7 @@ public class MaxMinArray
         int[] intArray;
         int maxValue;
         int minValue;
+        // Creates an array with 10 indexes
         intArray = new int[10];
 
         // Adds a random number from 1-99 into the array for every index
@@ -27,9 +28,13 @@ public class MaxMinArray
         {
             intArray[index] = rand.nextInt(99) + 1;
         }
+
+        // Prints the array
         System.out.println(Arrays.toString(intArray));
         maxValue = maxValue(intArray);
         minValue = minValue(intArray);
+
+        // Prints the max and min values
         System.out.printf("The maximum value is : %d%n", maxValue);
         System.out.printf("The minimum value is : %d%n", minValue);
     }
